@@ -1,7 +1,4 @@
-
-
-// function gameLoad() {
-
+    
     var targetNumber = null;
     var counter = 0;
     var wins = 0;
@@ -13,23 +10,8 @@
 
     gameLoad();
 
-    // function reset(){
-    //     counter = 0;
-    //     targetNumber = Math.floor((Math.random() * 200) + 1);
-    //     $(".r-num").html(targetNumber);
-    //     }
-
     function reset() {
-
-        // $(".r-num").html(targetNumber);
         $(".buttons").empty();
-        // for (var i = 0; i < 4; i++) {
-        //     var button = $("<img>");
-        //     button.addClass("crystal-button");
-        //     button.attr("src", images[i]);
-        //     button.attr("data-crystalvalue", Math.floor((Math.random() * 30) + 1));
-        //     $(".buttons").append(button);
-        // }
         counter = 0
         $(".count").html(counter);
         targetNumber = Math.floor((Math.random() * 30) + 1);
@@ -53,7 +35,6 @@ function gameLoad() {
         var crystalValue = ($(this).attr("data-crystalvalue"));
         crystalValue = parseInt(crystalValue);
         counter += crystalValue;
-        // alert(counter);
         $(".count").html(counter);
 
         if (counter === targetNumber) {
@@ -75,11 +56,6 @@ function gameLoad() {
 }
 
 
-// }
-// $(".game-load").on("click", function () {
-    
-    
-// })
 
 
 
